@@ -1,0 +1,4 @@
+# Runtime dependencies (none yet — ingest uses only the standard library).
+
+# Development / test dependencies
+pytest>=8.0

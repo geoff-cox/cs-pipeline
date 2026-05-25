@@ -1,0 +1,14 @@
+# Streamlit configuration for the proteus UI prototype.
+#
+# enableStaticServing exposes proteus_ui/streamlit_app/static/ at the URL
+# prefix `app/static/`. The question-previewer relies on this: each
+# textbook's preview files and a copy of the PreTeXt build's `_static/`
+# asset directory live under `static/previews/<textbook_id>/`, so the
+# preview HTML's cloned <head> (with relative `_static/...` URLs)
+# resolves against the served sibling.
+#
+# See proteus_ui/proteus_ui_guide.md §"Question previewer" for the full
+# layout and verification procedure.
+
+[server]
+enableStaticServing = true
