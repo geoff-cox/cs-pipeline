@@ -87,10 +87,10 @@ db_path = Path(db_path_str)
 # Header
 # ---------------------------------------------------------------------------
 
-st.title("PROTEUS")
+st.title("Control-Structure Coding")
 st.markdown(
-    "A tool for control-structure coding "
-    "of student short-answer responses."
+    "A PROTEUS tool for control-structure "
+    "coding of student short-answer responses."
 )
 
 # Acknowledge that PROTEUS as an acronym is a backronym; the team can
