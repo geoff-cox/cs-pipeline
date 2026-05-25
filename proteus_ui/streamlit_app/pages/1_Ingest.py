@@ -200,10 +200,11 @@ if uploaded is not None:
         # researcher notices dropped rows instead of silently trusting
         # the parsed count.
         if preview.parse_errors:
-            st.warning(
-                f"**Parser warnings ({len(preview.parse_errors)})**\n\n"
-                + "\n".join(f"- {msg}" for msg in preview.parse_errors)
-            )
+            with st.expander("⚠️ Parser warnings"):
+                st.warning(
+                    f"**Parser warnings ({len(preview.parse_errors)})**\n\n"
+                    + "\n".join(f"- {msg}" for msg in preview.parse_errors)
+                )
 
         # ----- File-level dup warning -------------------------------
         if preview.duplicate_file_import is not None:
