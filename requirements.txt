@@ -2,3 +2,4 @@
 
 # Development / test dependencies
 pytest>=8.0
+-e .
