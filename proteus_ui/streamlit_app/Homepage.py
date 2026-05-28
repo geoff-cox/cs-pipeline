@@ -98,8 +98,7 @@ st.markdown(
 
 st.markdown(
     "This interface drives the five-stage automation pipeline. Right now "
-    "it covers **Stage 1 (Ingest)**, import history, **Stage 2 "
-    "(Screening)**, and **Stage 3 (Extraction)**. Other stages will "
+    "it covers **Stage 1 (Ingest)** and import history. Other stages will "
     "appear in the sidebar as they're built."
 )
 
